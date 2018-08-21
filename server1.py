@@ -2,7 +2,8 @@ import socket ,sys ,os
 import threading
 
 bindip = "192.168.73.129"
-port = 5555
+port=input('\nEnter Port Number:')
+#port = 5555
 
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
