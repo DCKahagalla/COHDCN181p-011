@@ -1,8 +1,8 @@
 import socket ,sys ,os
-import threading
+from threading import Thread
 
-bindip = "192.168.73.129"
-port=input('\nEnter Port Number:')
+bindip = sys.argv[1]
+port=int(sys.argv[2])
 #port = 5555
 
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
