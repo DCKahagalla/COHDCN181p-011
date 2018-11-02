@@ -1,4 +1,7 @@
-f=open('xxd.py','r')
+import sys
+import os.path
+f=open(sys.argv[1],'r')
+#f=open('xxd.py','r')
 s=0	
 while True:
 	r=f.read(16)
